@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: `We've got you covered always in all ways!`,
+    paragraph: `We provide a wide array of professional and reliable computer services. We're confident that we have just the solution you're looking for - at the convenience of your doorstep!`
   };
 
   return (
