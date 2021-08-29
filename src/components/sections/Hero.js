@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
+import Image from '../elements/Image';
 
 const propTypes = {
   ...SectionProps.types
@@ -55,15 +56,23 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                  <Button tag="a" color="primary" wideMobile href="tel:0133239856">
                     Call Us Now
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    Drop Us A Request
+                  <Button tag="a" color="dark" wideMobile href="mailto:suthesankanagasabai@gmail.com">
+                    Drop Us A Mail
                     </Button>
                 </ButtonGroup>
               </div>
             </div>
+          </div>
+          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
+              <Image
+                className="has-shadow"
+                src={require('./../../assets/images/laptop.jpeg')}
+                alt="Hero"
+                width={896}
+                height={504} />
           </div>
         </div>
       </div>
