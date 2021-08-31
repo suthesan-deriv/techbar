@@ -119,7 +119,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                      <a href="mailto:suthesankanagasabai@gmail.com" className="button button-dark button-wide-mobile button-sm" onClick={closeMenu}>Mail Us</a>
+                      <a href="mailto:techbarmy@gmail.com" className="button button-dark button-wide-mobile button-sm" onClick={closeMenu}>Mail Us</a>
                       </li>
                     </ul>}
                 </div>

@@ -30,7 +30,7 @@ const FooterSocial = ({
             </svg>
           </a>
         </li> */}
-        {/* <li>
+        <li>
           <a href="https://www.instagram.com/techbarmy/">
             <svg
               width="16"
@@ -47,7 +47,7 @@ const FooterSocial = ({
               </g>
             </svg>
           </a>
-        </li> */}
+        </li>
       </ul>
     </div>
   );
