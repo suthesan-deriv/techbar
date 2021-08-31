@@ -59,7 +59,7 @@ const Hero = ({
                   <Button tag="a" color="primary" wideMobile href="tel:0133239856">
                     Call Us Now
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="mailto:suthesankanagasabai@gmail.com">
+                  <Button tag="a" color="dark" wideMobile href="mailto:techbarmy@gmail.com">
                     Drop Us A Mail
                     </Button>
                 </ButtonGroup>
