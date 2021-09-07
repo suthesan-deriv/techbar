@@ -3,6 +3,11 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import ContactUs from '../../assets/images/contact_us.jpeg'
+import PickUp from '../../assets/images/pickup.jpeg'
+import Repair from '../../assets/images/repair.jpeg'
+import Delivery from '../../assets/images/delivery.jpeg'
+
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -83,7 +88,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/contact_us.jpeg')}
+                  src={ContactUs}
                   alt="Contact us"
                   width={528}
                   height={396} />
@@ -109,7 +114,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/pickup.jpeg')}
+                  src={PickUp}
                   alt="Pickup"
                   width={528}
                   height={396} />
@@ -135,7 +140,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/repair.jpeg')}
+                  src={Repair}
                   alt="Repair"
                   width={528}
                   height={396} />
@@ -161,7 +166,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/delivery.jpeg')}
+                  src={Delivery}
                   alt="Delivery"
                   width={528}
                   height={396} />
