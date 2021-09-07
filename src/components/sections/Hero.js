@@ -4,6 +4,7 @@ import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
+import HeroImage from '../../assets/images/laptop.jpeg'
 
 const propTypes = {
   ...SectionProps.types
@@ -69,7 +70,7 @@ const Hero = ({
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
               <Image
                 className="has-shadow"
-                src={require('./../../assets/images/laptop.jpeg')}
+                src={HeroImage}
                 alt="Hero"
                 width={896}
                 height={504} />
