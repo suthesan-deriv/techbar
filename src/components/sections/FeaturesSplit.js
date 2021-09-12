@@ -1,12 +1,26 @@
 import React from 'react';
 import classNames from 'classnames';
+import { graphql, useStaticQuery } from 'gatsby'
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
-import ContactUs from '../../assets/images/contact_us.jpeg'
-import PickUp from '../../assets/images/pickup.jpeg'
-import Repair from '../../assets/images/repair.jpeg'
-import Delivery from '../../assets/images/delivery.jpeg'
+import QueryImage from '../elements/query-image';
+
+const query = graphql`
+    query {
+        contact: file(relativePath: { eq: "contact_us.jpeg" }) {
+            ...fadeIn
+        }
+        pickup: file(relativePath: { eq: "pickup.jpeg" }) {
+          ...fadeIn
+        }
+        repair: file(relativePath: { eq: "repair.jpeg" }) {
+          ...fadeIn
+        }
+        delivery: file(relativePath: { eq: "delivery.jpeg" }) {
+          ...fadeIn
+        }
+      }
+`
 
 
 const propTypes = {
@@ -31,6 +45,8 @@ const FeaturesSplit = ({
   imageFill,
   ...props
 }) => {
+
+  const data = useStaticQuery(query)
 
   const outerClasses = classNames(
     'features-split section',
@@ -87,11 +103,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <Image
-                  src={ContactUs}
-                  alt="Contact us"
-                  width={528}
-                  height={396} />
+                <QueryImage data={data['contact']} alt="Contact us" width="528px" />
               </div>
             </div>
 
@@ -113,11 +125,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <Image
-                  src={PickUp}
-                  alt="Pickup"
-                  width={528}
-                  height={396} />
+                <QueryImage data={data['pickup']} alt="Pickup" width="528px" />
               </div>
             </div>
 
@@ -139,11 +147,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <Image
-                  src={Repair}
-                  alt="Repair"
-                  width={528}
-                  height={396} />
+                <QueryImage data={data['repair']} alt="Repair" width="528px" />
               </div>
             </div>
 
@@ -165,11 +169,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <Image
-                  src={Delivery}
-                  alt="Delivery"
-                  width={528}
-                  height={396} />
+                <QueryImage data={data['delivery']} alt="Delivery" width="528px" />
               </div>
             </div>
 
