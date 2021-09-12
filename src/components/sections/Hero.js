@@ -1,10 +1,18 @@
 import React from 'react';
 import classNames from 'classnames';
+import { graphql, useStaticQuery } from 'gatsby'
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-import Image from '../elements/Image';
-import HeroImage from '../../assets/images/laptop.jpeg'
+import QueryImage from '../elements/query-image';
+
+const query = graphql`
+    query {
+        hero_image: file(relativePath: { eq: "laptop.jpeg" }) {
+            ...fadeIn
+        }
+      }
+`
 
 const propTypes = {
   ...SectionProps.types
@@ -24,6 +32,8 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
+
+  const data = useStaticQuery(query)
 
   const outerClasses = classNames(
     'hero section center-content',
@@ -68,12 +78,7 @@ const Hero = ({
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-              <Image
-                className="has-shadow"
-                src={HeroImage}
-                alt="Hero"
-                width={896}
-                height={504} />
+              <QueryImage data={data['hero_image']} alt="TechBar Computer Services" width="896px" />
           </div>
         </div>
       </div>
