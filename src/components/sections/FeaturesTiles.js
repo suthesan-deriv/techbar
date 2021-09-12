@@ -65,7 +65,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={Icon}
-                      alt="Features tile icon 01"
+                      alt="Computer Repairs - Desktop & Laptop"
                       width={64}
                       height={64} />
                   </div>
@@ -97,7 +97,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={Icon}
-                      alt="Features tile icon 04"
+                      alt="Hardware Installations, Upgrades & Consultations"
                       width={64}
                       height={64} />
                   </div>
@@ -127,7 +127,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={Icon}
-                      alt="Features tile icon 03"
+                      alt="Software Installations, Updates & Consultations"
                       width={64}
                       height={64} />
                   </div>
@@ -154,7 +154,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={Icon}
-                      alt="Features tile icon 05"
+                      alt="Networking and Router Setups"
                       width={64}
                       height={64} />
                   </div>
@@ -178,7 +178,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={Icon}
-                      alt="Features tile icon 02"
+                      alt="Data Recovery & Backup"
                       width={64}
                       height={64} />
                   </div>
@@ -202,7 +202,7 @@ const FeaturesTiles = ({
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={Icon}
-                      alt="Features tile icon 06"
+                      alt="Computer & IT Peripheral Purchase Consultations"
                       width={64}
                       height={64} />
                   </div>
