@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'TechBar',
     description:
-        'TechBar provides reliable, affordable and convenient computer services. TechBar provides various services such as repairs, upgrades, updates, consultations and more',
+        'TechBar provides reliable, affordable and convenient computer services. TechBar provides various services such as repairs, upgrades, installations, consultations and more',
     author: 'TechBar.app',
     siteUrl: 'https://techbar.app',
 },

@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
-import OgImage from 'images/common/og_image.png'
+import OgImage from '../images/og_image.png'
 
-const SEO = ({ description, meta, title, no_index, has_organization_schema, meta_attributes }) => {
+const Seo = ({ description, meta, title, no_index, has_organization_schema, meta_attributes }) => {
     let queries = []
     queries = useStaticQuery(
         graphql`
@@ -21,8 +21,8 @@ const SEO = ({ description, meta, title, no_index, has_organization_schema, meta
         `,
     )
     const metaDescription = description || queries.site.siteMetadata.description
-    const default_og_title = localize('TechBar Computer Services | Reliable. Affordable. Convenient.')
-    const default_og_description = localize('Computer services provided just the way you need it.')
+    const default_og_title = 'TechBar Computer Services | Reliable. Affordable. Convenient.'
+    const default_og_description = 'Computer services provided just the way you need it.'
     let organization_schema = {}
 
 
@@ -44,9 +44,6 @@ const SEO = ({ description, meta, title, no_index, has_organization_schema, meta
 
     return (
         <Helmet
-            htmlAttributes={{
-                lang,
-            }}
             title={title}
             defer={false}
             meta={[
@@ -73,10 +70,6 @@ const SEO = ({ description, meta, title, no_index, has_organization_schema, meta
                 {
                     property: 'og:type',
                     content: meta_attributes?.og_type || 'website',
-                },
-                {
-                    property: 'og:locale',
-                    content: lang,
                 },
                 {
                     property: 'og:image',
@@ -111,10 +104,6 @@ const SEO = ({ description, meta, title, no_index, has_organization_schema, meta
                     content: 'telephone=no',
                 },
                 {
-                    name: 'yandex-verification',
-                    content: '4ddb94bbff872c63',
-                },
-                {
                     name: 'referrer',
                     content: 'origin',
                 },
@@ -135,11 +124,11 @@ const SEO = ({ description, meta, title, no_index, has_organization_schema, meta
     )
 }
 
-SEO.defaultProps = {
+Seo.defaultProps = {
     meta: [],
 }
 
-SEO.propTypes = {
+Seo.propTypes = {
     description: PropTypes.string,
     has_organization_schema: PropTypes.bool,
     meta: PropTypes.arrayOf(PropTypes.object),
@@ -148,4 +137,4 @@ SEO.propTypes = {
     title: PropTypes.string.isRequired,
 }
 
-export default SEO
+export default Seo
