@@ -103,7 +103,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <QueryImage data={data['contact']} alt="Contact us" width="528px" />
+                <QueryImage data={data['contact']} alt="Contact us" />
               </div>
             </div>
 
@@ -125,7 +125,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <QueryImage data={data['pickup']} alt="Pickup" width="528px" />
+                <QueryImage data={data['pickup']} alt="Pickup" />
               </div>
             </div>
 
@@ -147,7 +147,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <QueryImage data={data['repair']} alt="Repair" width="528px" />
+                <QueryImage data={data['repair']} alt="Repair" />
               </div>
             </div>
 
@@ -169,7 +169,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <QueryImage data={data['delivery']} alt="Delivery" width="528px" />
+                <QueryImage data={data['delivery']} alt="Delivery" />
               </div>
             </div>
 

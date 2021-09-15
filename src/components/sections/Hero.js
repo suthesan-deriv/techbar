@@ -78,7 +78,7 @@ const Hero = ({
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-              <QueryImage data={data['hero_image']} alt="TechBar Computer Services" width="896px" />
+              <QueryImage data={data['hero_image']} alt="TechBar Computer Services" />
           </div>
         </div>
       </div>

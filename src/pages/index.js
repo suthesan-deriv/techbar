@@ -15,7 +15,7 @@ const Home = () => {
     <LayoutDefault>
       <Seo
         title={'TechBar | Computer Repairs, Installations & Consultations'}
-        description={'TechBar provides reliable, affordable and convenient computer services. TechBar provides various services such as repairs, upgrades, installations, consultations and more'}
+        description={'TechBar provides reliable, affordable and convenient computer services. TechBar provides various computer services such as repairs, upgrades, installations, consultations and more'}
         has_organization_schema
       />
       <Hero className="illustration-section-01" />
