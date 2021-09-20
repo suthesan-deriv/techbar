@@ -63,12 +63,12 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Need an affordable solution to your computer needs? You're just one call away!
+                Need an affordable solution to your computer needs? You're just one click away!
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile href="tel:0133239856">
-                    Call Us Now
+                    Chat With Us Now
                     </Button>
                   <Button tag="a" color="dark" wideMobile href="mailto:techbarmy@gmail.com">
                     Drop Us A Mail
