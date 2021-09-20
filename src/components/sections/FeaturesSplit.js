@@ -94,7 +94,7 @@ const FeaturesSplit = ({
                   Reach out for us
                   </h3>
                 <p className="m-0">
-                <a className="text-color-primary" href="tel:0133239856">Call us</a> now or just drop us an email at <a href="mailto:techbarmy@gmail.com">techbarmy@gmail.com</a>. One of our technicians will get back to you within 24 hours with a solution for your issue and a quotation.
+                <a className="text-color-primary" href="https://wa.me/+60133239856">Chat with us</a> now or just drop us an email at <a href="mailto:techbarmy@gmail.com">techbarmy@gmail.com</a>. One of our technicians will get back to you within 24 hours with a solution for your issue and a quotation.
                   </p>
               </div>
               <div className={

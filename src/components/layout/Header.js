@@ -111,7 +111,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                    <a href="tel:0133239856" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Call Us</a>
+                    <a href="https://wa.me/+60133239856" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Chat With Us</a>
                     </li>
                   </ul>
                   {!hideSignin &&

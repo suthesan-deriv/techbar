@@ -53,11 +53,11 @@ const Cta = ({
         >
           <div className="cta-slogan">
             <h3 className="m-0">
-              Call us now for a solution!
+              Chat with us now for a solution!
               </h3>
           </div>
-          <Button tag="a" color="primary" wideMobile href="tel:0133239856">
-            Call Us Now
+          <Button tag="a" color="primary" wideMobile href="https://wa.me/+60133239856">
+            Chat With Us Now
           </Button>
         </div>
       </div>
