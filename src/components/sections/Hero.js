@@ -67,7 +67,7 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="tel:0133239856">
+                  <Button tag="a" color="primary" wideMobile href="https://wa.me/+60133239856">
                     Chat With Us Now
                     </Button>
                   <Button tag="a" color="dark" wideMobile href="mailto:techbarmy@gmail.com">
